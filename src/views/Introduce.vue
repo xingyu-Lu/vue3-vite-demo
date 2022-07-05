@@ -1,6 +1,6 @@
 <template>
 	<el-row v-if="flag" :gutter="24" style="margin-bottom: 20px;">
-		<el-col :sm="16">
+		<el-col :sm="17">
 			<el-carousel height="450px">
 				<el-carousel-item v-for="item in news_rotate" :key="item" indicator-position="none">
 					<el-image style="width: 100%; height: 100%; cursor: pointer;" fit="fill" :key=item.img_url
@@ -9,7 +9,7 @@
 				</el-carousel-item>
 			</el-carousel>
 		</el-col>
-		<el-col :sm="8">
+		<el-col :sm="7">
 			<el-tabs v-model="activeName">
 			    <el-tab-pane label="一线党建" name="yxdj">
 					<el-row :gutter="20" justify="start" align="top">
