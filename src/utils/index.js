@@ -126,6 +126,9 @@ export const pathMap = {
 	ydyf_detail: '医德医风',
 	qnjyz: '青年加油站',
 	qnjyz_detail: '青年加油站',
+	// 一线党建
+	yxdj: '一线党建',
+	yxdj_detail: '一线党建',
 	// 人才招聘
 	zpxx: '招聘信息',
 	zpxx_detail: '招聘信息',
@@ -149,6 +152,9 @@ export const pathMap = {
 	// 修改密码
 	change_password: '修改密码',
 	
+	// 疫情防控
+	epidemic_control: '疫情防控',
+	epidemic_control_detail: '疫情防控',
 	
 	api_test: 'api 测试',
 	good: '商品列表',

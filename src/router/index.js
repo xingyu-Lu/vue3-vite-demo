@@ -446,6 +446,17 @@ const router = createRouter({
 		name: 'qnjyz_detail',
 		component: () => import('../views/djzc/qnjyz_detail.vue')
 	},
+	// 一线党建
+	{
+		path: '/yxdj',
+		name: 'yxdj',
+		component: () => import('../views/yxdj/yxdj.vue')
+	},
+	{
+		path: '/yxdj_detail',
+		name: 'yxdj_detail',
+		component: () => import('../views/yxdj/yxdj_detail.vue')
+	},
 	// 人才招聘
 	{
 		path: '/zpxx',
@@ -536,6 +547,17 @@ const router = createRouter({
 		component: () => import('../views/search/index.vue')
 	},
 	
+	// 疫情防控
+	{
+		path: '/epidemic-control',
+		name: 'epidemic_control',
+		component: () => import('../views/epidemic_control/epidemic_control.vue')
+	},
+	{
+		path: '/epidemic-control-detail',
+		name: 'epidemic_control_detail',
+		component: () => import('../views/epidemic_control/epidemic_control_detail.vue')
+	},
 	
 	{
 		path: '/api_test',

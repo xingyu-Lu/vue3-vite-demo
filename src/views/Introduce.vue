@@ -1,6 +1,6 @@
 <template>
-	<el-row v-if="flag" style="margin-bottom: 20px;">
-		<el-col :sm="24">
+	<el-row v-if="flag" :gutter="24" style="margin-bottom: 20px;">
+		<el-col :sm="16">
 			<el-carousel height="450px">
 				<el-carousel-item v-for="item in news_rotate" :key="item" indicator-position="none">
 					<el-image style="width: 100%; height: 100%; cursor: pointer;" fit="fill" :key=item.img_url
@@ -8,6 +8,42 @@
 					</el-image>
 				</el-carousel-item>
 			</el-carousel>
+		</el-col>
+		<el-col :sm="8">
+			<el-tabs v-model="activeName">
+			    <el-tab-pane label="一线党建" name="yxdj">
+					<el-row :gutter="20" justify="start" align="top">
+						<el-col>
+							<li v-for="(item, index) in party" style="list-style: none;line-height: 26px;">
+								<div style="display: flex; justify-content: space-between;">
+									<el-link style="font-size: 14px;" :href="'/yxdj_detail?id=' + item.id" target="_blank"
+										type="primary" :underline="false">
+										{{ item.title }}
+									</el-link>
+								</div>
+							</li>
+							<el-link v-if="party_more" style="font-size: 14px;" href="/yxdj" target="_blank" type="primary" :underline="false"
+								:icon="Plus">更多</el-link>
+						</el-col>
+					</el-row>
+				</el-tab-pane>
+			    <el-tab-pane label="疫情防控" name="yqfk">
+					<el-row :gutter="20" justify="start" align="top">
+						<el-col>
+							<li v-for="(item, index) in epidemic_control" style="list-style: none;line-height: 26px;">
+								<div style="display: flex; justify-content: space-between;">
+									<el-link style="font-size: 14px;" :href="'/epidemic-control-detail?id=' + item.id" target="_blank"
+										type="primary" :underline="false">
+										{{ item.title }}
+									</el-link>
+								</div>
+							</li>
+							<el-link v-if="epidemic_control_more" style="font-size: 14px;" href="/epidemic-control" target="_blank" type="primary" :underline="false"
+								:icon="Plus">更多</el-link>
+						</el-col>
+					</el-row>
+				</el-tab-pane>
+			  </el-tabs>
 		</el-col>
 		<!-- <el-col :sm="24">
 			<el-carousel height="450px">
@@ -510,6 +546,7 @@
 		name: 'Introduce',
 		setup() {
 			const show = ref(true)
+			const activeName = ref('yxdj')
 			const goJuejin = () => {
 				console.log('goJuejin')
 				window.open('https://juejin.cn/book/6933939264455442444', 'target')
@@ -526,6 +563,10 @@
 				news_gg: [],
 				job: [],
 				patient_service: [],
+				party: [],
+				party_more: false,
+				epidemic_control: [],
+				epidemic_control_more: false,
 			})
 
 			onMounted(() => {
@@ -544,6 +585,14 @@
 				state.news_gg = index.data.news_gg
 				state.job = index.data.job
 				state.patient_service = index.data.patient_service
+				state.party = index.data.party.data
+				if (index.data.party.is_more == 1) {
+					state.party_more = true
+				}
+				state.epidemic_control = index.data.epidemic_control.data
+				if (index.data.epidemic_control.is_more == 1) {
+					state.epidemic_control_more = true
+				}
 				state.flag = true
 			}
 
@@ -553,6 +602,7 @@
 			return {
 				...toRefs(state),
 				show,
+				activeName,
 				goJuejin,
 				Plus,
 				go_detail
