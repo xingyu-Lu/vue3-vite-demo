@@ -111,8 +111,8 @@ export const pathMap = {
 	lxwm: '联系我们',
 	hlyd: '护理园地',
 	hlyd_detail: '护理园地',
-	jkcj: '健康促进',
-	jkcj_detail: '健康促进',
+	jkcj: '健康科普',
+	jkcj_detail: '健康科普',
 	// 党建之窗
 	dwgl: '党务管理',
 	dwgl_detail: '党务管理',

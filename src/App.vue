@@ -48,7 +48,7 @@
 						<el-menu-item index="/lxwm">联系我们</el-menu-item>
 						<!-- <el-menu-item index="/yzxx">院长信箱</el-menu-item> -->
 						<el-menu-item index="/hlyd">护理园地</el-menu-item>
-						<el-menu-item index="/jkcj">健康促进</el-menu-item>
+						<el-menu-item index="/jkcj">健康科普</el-menu-item>
 					</el-sub-menu>
 					<el-sub-menu index="7">
 						<template #title>党建之窗</template>
@@ -157,10 +157,10 @@
 							<li><a style="color: #ccc; text-decoration: none;" href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备12031661号-3</a></li>
 							<!-- <li><a href="https://beian.miit.gov.cn/" type="info" target="_blank"
 									style="color: #ccc; text-decoration: none;">宜网备案号：51150002020011</a></li> -->
-							<li><img style="width: 20px; height: 20px;" src="/src/assets/img/c_police.png" alt=""><a
+							<!-- <li><img style="width: 20px; height: 20px;" src="/src/assets/img/c_police.png" alt=""><a
 									href="http://www.beian.gov.cn/portal/registerSy%20stemInfo?%20recordcode=51150202000042"
 									target="_blank" style="color: #ccc; text-decoration: none;">川公网安备51150202000042号</a>
-							</li>
+							</li> -->
 						</ul>
 					</el-col>
 					<el-col :sm="7" style="justify-content: center; align-items: center;">

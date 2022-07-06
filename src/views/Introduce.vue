@@ -502,7 +502,7 @@
 	<el-card v-if="flag" style="margin-top: 20px; margin-bottom: 20px;" shadow="hover">
 		<template #header>
 			<div class="card-header">
-				<strong>健康促进</strong>
+				<strong>健康科普</strong>
 				<el-link style="font-size: 12px;" href="/jkcj" target="_blank" type="primary" :underline="false"
 					:icon="Plus">更多</el-link>
 			</div>
