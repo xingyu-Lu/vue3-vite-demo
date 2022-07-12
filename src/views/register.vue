@@ -1,6 +1,6 @@
 <template>
 	<el-row style="min-height: 100%;" justify="space-around" align="middle">
-		<el-col :sm="8">
+		<el-col :sm="16" :md="8">
 			<el-card>
 				<div
 					style="justify-content: center; display: flex; font-size: 28px; color: #1BAEAE; font-weight: bold; margin-bottom: 20px;">
