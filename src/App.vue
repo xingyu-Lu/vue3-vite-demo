@@ -155,6 +155,7 @@
 						<ul style="list-style: none; line-height: 36px;">
 							<li>版权所有：@宜宾市第三人民医院</li>
 							<li><a style="color: #ccc; text-decoration: none;" href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备12031661号-3</a></li>
+							<li><img style="width: 20px; height: 20px;" src="/src/assets/img/c_police.png" alt="">川公网安备51150202000351号</li>
 							<!-- <li><a href="https://beian.miit.gov.cn/" type="info" target="_blank"
 									style="color: #ccc; text-decoration: none;">宜网备案号：51150002020011</a></li> -->
 							<!-- <li><img style="width: 20px; height: 20px;" src="/src/assets/img/c_police.png" alt=""><a
