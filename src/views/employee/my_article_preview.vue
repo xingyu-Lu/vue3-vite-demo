@@ -104,9 +104,9 @@
 	  padding: 3px 5px;
 	}
 	:deep() table th {
-		border-bottom: 2px solid #ccc;
-		text-align: center;
-		background-color: #f1f1f1
+	 border-bottom: 2px solid #ccc;
+	  text-align: center;
+	  background-color: #f5f2f0
 	}
 	
 	/* blockquote 样式 */
@@ -117,13 +117,13 @@
 	  margin: 10px 0;
 	  line-height: 1.4;
 	  font-size: 100%;
-	  background-color: #f1f1f1;
+	  background-color: #f5f2f0;
 	}
 	
 	/* code 样式 */
 	:deep() code {
 	  display: inline-block;
-	  background-color: #f1f1f1;
+	  background-color: #f5f2f0;
 	  border-radius: 3px;
 	  padding: 3px 5px;
 	  margin: 0 3px;
@@ -133,8 +133,11 @@
 	}
 	
 	/* ul ol 样式 */
-	:deep() ul,
-	:deep() ol {
+	:deep() ul, ol {
 	  margin: 10px 0 10px 20px;
+	}
+	
+	:deep() input[type="checkbox"] {
+	  margin-right: 5px;
 	}
 </style>
