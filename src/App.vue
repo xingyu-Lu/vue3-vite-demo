@@ -76,7 +76,8 @@
 					<el-menu-item index="/register" v-if="is_login == false">注册</el-menu-item>
 					<el-menu-item index="" v-if="is_login == true" @click="logout">退出登录</el-menu-item>
 					<el-menu-item index="/change-password" v-if="is_login == true">修改密码</el-menu-item>
-					<el-menu-item index="/employee-my-file" v-if="is_login == true">我的云盘</el-menu-item>
+					<!-- <el-menu-item index="/employee-my-file" v-if="is_login == true">我的云盘</el-menu-item> -->
+					<el-menu-item><el-link href="https://www.ybssyy.com" :underline="false" type="primary" target="_blank">老版链接</el-link></el-menu-item>
 					<!-- <el-menu-item index="/update_log">更新记录</el-menu-item> -->
 					<div style="margin-top: 10px; margin-left: 10px; width: 210px;">
 						<el-input v-model="input3" placeholder="请输入关键词" class="input-with-select" size="default">
@@ -92,7 +93,6 @@
 							</template>
 						</el-input>
 					</div>
-					<el-menu-item><el-link href="https://www.ybssyy.com" :underline="false" type="primary" target="_blank">老版链接</el-link></el-menu-item>
 					<!-- <el-menu-item index="/api_test">api-test</el-menu-item>
 					<el-menu-item index="/good">good</el-menu-item>
 					<el-menu-item index="/add_good">add_good</el-menu-item> -->
