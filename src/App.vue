@@ -92,6 +92,7 @@
 							</template>
 						</el-input>
 					</div>
+					<el-menu-item><el-link href="https://www.ybssyy.com" :underline="false" type="primary" target="_blank">老版链接</el-link></el-menu-item>
 					<!-- <el-menu-item index="/api_test">api-test</el-menu-item>
 					<el-menu-item index="/good">good</el-menu-item>
 					<el-menu-item index="/add_good">add_good</el-menu-item> -->
