@@ -183,7 +183,7 @@
 					</el-col> -->
 					<!-- <el-col :sm="24"> -->
 						<el-row :gutter="20" v-for="(item,index) in news_xw" justify="start">
-							<el-col :gutter="20" :sm="8" v-for="(item_1, index_1) in item">
+							<el-col :gutter="20" :sm="12" v-for="(item_1, index_1) in item">
 								<div style="display: flex; justify-content: flex-start; cursor: pointer;"
 									@click="go_detail('/yyxw_detail?id=' + item_1.id)">
 									<el-row :gutter="20" style="margin-bottom: 5px;">
